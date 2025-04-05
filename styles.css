@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-family-abezee: "ABeeZee";
+    --font-family-abhaya: "Abhaya";
+    --font-size-small: small;
+    --font-size-medium: 16px;
+    --font-size-large: 30px;
+    --font-size-xlarge: 70px;
+    --card-background: #EEEEEE;
+    --card-border: 2px solid black;
+    --card-radius: 8px;
+    --button-border-radius: 100px;
+    --button-text-color: #000000DE;
+}
+  
+
 body{
     width: 100%;
     height: fit-content;
@@ -25,7 +40,7 @@ body{
 }
 
 header{
-    background-color: #eeee;
+    background-color: var(--background-color);
     display: flex;
     padding: 10px;
     justify-content: space-between;
@@ -43,8 +58,8 @@ display: flex;
 align-items: center;
 gap: 20px;
 text-decoration: none;
-font-size: small;
-font-family: "ABeeZee";
+font-size: var(--font-size-small);
+font-family: var(--font-family-abezee);
 }
 
 header > a > img{
@@ -57,7 +72,7 @@ header > a > img{
 
 li > a{
     text-decoration: none;
-    color: black
+    color: var(--font-color-black);
 }
 
 .icon > a > img{
@@ -103,17 +118,17 @@ li > a{
 }
 
 h1{
-    font-family: "Abhaya";
+    font-family: var(--font-family-abhaya);
     font-style: normal;
-    color: #FFFFFF;
-    font-size: 70px;
-    font-weight: 400;
+    color:  white;
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-normal);
     margin-top: 70px;
     margin-left: 60px;
 }
 
 .hero div p{
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     color: white;
     width: 202px;
     height: 20px;
@@ -128,12 +143,12 @@ h1{
     }
 
     h1{
-        font-size: 30px;
+        font-size: var(--font-size-large);
         margin-left: 15px;
     }
 
     .hero div p{
-        font-size: 10px;
+        font-size: var(--font-size-medium);
         margin-left: 15px;
     }
 
@@ -163,8 +178,8 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--card-radius);
     background-color: #EEEEEE;
     width: 756px;
     height: 550px;
@@ -180,17 +195,17 @@ h1{
     gap: 10px;
     padding-left: 30px;
     padding-top: 30px;
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
 }
 
 .card-h3 > h3{
-  font-weight: 400;
-  font-size: 30px;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-large);
 }
 
 .card-h3 > p{
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-medium);
 }
 
 .card > div > img{
@@ -215,15 +230,15 @@ h1{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     background-color: white;
     height: 40px;
     width: 120px;
     border-radius: 100px;
     border: none;
-    color: #000000DE;
+    color: var(--font-color-black);
 }
 
 .colors{
@@ -317,14 +332,14 @@ h1{
 }
 
 .section-two  h2{
-    font-family: "Abhaya";
-    font-weight: 400;
+    font-family: var(--font-family-abhaya);
+    font-weight: var(--font-weight-normal);
     font-size: 96px;
 }
 
 .section-two p{
-    font-family: "ABeeZee";
-    font-weight: 400;
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-weight-normal);
     font-size: 24px;
     width: 100%;
     max-width: 509px;
@@ -366,8 +381,8 @@ h1{
 }
 
 .title-map h3{
-    font-family: "ABeeZee";
-    font-weight: 400;
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-size-medium);
     font-size: 40px;
     color: #FFFFFF;
     width: 352px;
@@ -415,12 +430,12 @@ h1{
 }
 
 .card_two{
-    background-color: #D9D9D9;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: none;
-    border-radius: 8px;
+    border-radius: var(--card-radius);
     width: 540px;
     height: 540px;
     padding: 40px 30px;
@@ -429,8 +444,8 @@ h1{
 }
 
 .card_two h3{
-    font-family: "ABeeZee";
-    font-weight: 400;
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-size-medium);
     font-size: 30px;
 }
 
@@ -487,7 +502,7 @@ h1{
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 50px;
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     padding-bottom: 50px;
 }
 
@@ -532,34 +547,32 @@ h1{
     }
 }
 
-.section-six{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+.section-six {
+    display: grid;
+    place-items: center;
     width: 100%;
     height: auto;
-}
-.section-six article{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 30px 0;
 }
 
-.section-six div img{
-    display: flex;
+.section-six article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-six div img {
     width: 500px;
     height: 400px;
     object-fit: cover;
-    margin-right: 10px;
     margin-top: 50px;
 }
 
-.maybach{
+.maybach {
     width: 720px;
     height: 300px;
     display: flex;
@@ -570,56 +583,59 @@ h1{
     padding-left: 50px;
 }
 
-.maybach h2{
-    color: black;
-    font-family: "ABeeZee";
+.maybach h2 {
+    color: var(--font-color-black);
+    font-family: var(--font-family-abezee);
     width: 580px;
     height: 150px;
-    font-weight: 400;
+    font-weight: var(--font-size-medium);
     font-size: 50px;
 }
 
-.maybach p{
-    color: black;
-    font-family: "ABeeZee";
-    font-weight: 400;
+.maybach p {
+    color: var(--font-color-black);
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-size-medium);
     font-size: 14px;
     width: 439px;
     height: 63px;
 }
 
-.maybach a{
-    color: black;
-    font-weight: 400;
+.maybach a {
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-normal);
     font-size: 15px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.maybach a:hover{
+.maybach a:hover {
     text-decoration: underline;
     color: grey;
 }
 
-@media(max-width: 800px){
-    .maybach{
+@media (max-width: 800px) {
+    .section-six article {
+        grid-template-columns: 1fr;
+    }
+
+    .maybach {
+        width: 100%;
         height: fit-content;
-        width: 514px;
-        display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 50px;
+        margin-right: 0;
+        padding-left: 0;
     }
 
-    .section-six div img{
+    .section-six div img {
         width: 100%;
         height: 350px;
-        padding:  20px;
+        padding: 20px;
         object-fit: scale-down;
-
     }
 
-    .maybach h2{
+    .maybach h2 {
         width: 300px;
         height: fit-content;
         font-size: 25px;
@@ -627,17 +643,18 @@ h1{
         text-align: center;
     }
 
-    .maybach p{
+    .maybach p {
         width: 300px;
-        height: 78px;
+        height: auto;
         font-size: small;
         text-align: center;
     }
 
-    .maybach a{
+    .maybach a {
         text-align: center;
     }
 }
+
       
 .footer{
     width: 100%;
@@ -661,8 +678,8 @@ h1{
     color: whitesmoke;
     width: 656px;
     height: 42px;
-    font-family: "ABeeZee";
-    font-weight: 400;
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-weight-normal);
     font-size: 16px;
 }
 
@@ -671,15 +688,15 @@ h1{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     background-color: white;
     height: 50px;
     width: 200px;
     border-radius: 100px;
     border: none;
-    color: #000000DE;
+    color: var(--font-color-black);
 }
 
 .footer-article a:hover{
@@ -724,15 +741,15 @@ h1{
 }
 
 .join h3{
-    font-family: "ABeeZee";
-    font-weight: 300;
+    font-family: var(--font-family-abezee);
+    font-weight: var(--font-weight-normal);
     font-size: 20px;
     color: white;
 }
 
 .join p{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 14px;
     color: white;
 }
@@ -770,7 +787,7 @@ input[type="email"]{
 }
 
 input::placeholder{
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     text-align: center;
     color: white;
     border: none;
@@ -808,7 +825,7 @@ label{
     align-items: center;
     color: white;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: var(--font-weight-normal);
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -855,7 +872,7 @@ span:hover{
     height: auto;
     color: rgb(219, 218, 218);
     text-decoration: none;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -863,7 +880,7 @@ span:hover{
 .list-options ul li:first-of-type a{
     font-weight: bolder;
     font-size: 30px;
-    font-family: "ABeeZee";
+    font-family: var(--font-family-abezee);
     font-style:inherit;
     margin-bottom: 20px;
     display: block;
